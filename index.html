@@ -22,11 +22,16 @@
 
         </div>
     </div>
+    <div id ="transaction-area">
+        <h1>Transaction Area</h1>
+    </div>
     <script>
         const loginBtn= document.getElementById('login'); 
         loginBtn.addEventListener("click", function(){
-            console.log("amake click marse.");
-
+          const loginArea = document.getElementById('login-area') ;
+          loginArea.style.display= "none";
+          const transactionArea = document.getElementById("transaction-area");
+            transactionArea.style.display = "block";
         })
     </script>
 </body>
